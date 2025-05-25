@@ -5,19 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LEARN WISE | Home</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; background-color: #f5fff5; color: #003300; margin: 0; }
-    header, footer { background-color: #228B22; color: white; text-align: center; padding: 20px; }
-    nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
-    main { padding: 30px; }
-    .hero { background-color: white; border-left: 6px solid #228B22; padding: 25px;
-            border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 30px; }
-    .categories { display: flex; gap: 20px; flex-wrap: wrap; }
-    .category { flex: 1 1 200px; background-color: white; border: 2px solid #228B22;
-                border-radius: 8px; padding: 20px; text-align: center; font-weight: bold;
-                color: #003300; cursor: pointer; transition: background-color 0.3s; }
-    .category:hover { background-color: #e0ffe0; }
-    .note { margin-top: 20px; padding: 15px; background-color: #eaffea; border-left: 4px solid #228B22;
-            border-radius: 6px; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5fff5;
+      color: #003300;
+      margin: 0;
+    }
+    header, footer {
+      background-color: #228B22;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    main {
+      padding: 30px;
+    }
+    .hero {
+      background-color: white;
+      border-left: 6px solid #228B22;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .deal-banner {
+      background-color: #eaffea;
+      border: 2px dashed #228B22;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .categories {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .category {
+      flex: 1 1 200px;
+      background-color: white;
+      border: 2px solid #228B22;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: #003300;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .category:hover {
+      background-color: #e0ffe0;
+    }
   </style>
 </head>
 <body>
@@ -30,11 +76,17 @@
       <a href="login.html">Login / Sign Up</a>
     </nav>
   </header>
+
   <main>
     <div class="hero">
       <h2>Welcome to LEARN WISE</h2>
-      <p>Islandwide delivery for past paper books with free teacher video support upon purchase. Elegant. Reliable. Local + Edexcel Curriculum.</p>
+      <p>Your trusted bookstore for past papers and more – Local and Edexcel curriculum support, islandwide delivery and FREE teacher video guidance!</p>
     </div>
+
+    <div class="deal-banner">
+      🎉 Great Deals Today! Use Promo Code <strong>WISE10</strong> for 10% OFF! 🎉
+    </div>
+
     <section class="categories">
       <div class="category">Local Curriculum
         <ul style="list-style: none; padding-left: 0; margin-top: 10px;">
@@ -46,13 +98,11 @@
       </div>
       <div class="category">Edexcel Curriculum</div>
     </section>
-    <div class="note">
-      <strong>Note:</strong> To access video support for purchased books, please <a href="login.html" style="color: #228B22; font-weight: bold;">create an account</a> and log in.
-    </div>
   </main>
+
   <footer>
     <p>&copy; 2025 LEARN WISE Sri Lanka - Islandwide Delivery Available</p>
-    <p>Contact us: <strong>+94 76 123 4567</strong> | <strong>support@learnwise.lk</strong></p>
+    <p>Hotline: +94 76 123 4567 | Email: support@learnwise.lk</p>
   </footer>
 </body>
 </html>
