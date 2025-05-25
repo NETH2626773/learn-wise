@@ -1,11 +1,21 @@
-<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LEARN WISE | Login</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Login - LEARN WISE</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f5fff5; color: #003300; margin: 0; }
+    header, footer { background-color: #228B22; color: white; text-align: center; padding: 20px; }
+    nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
+    .form-container { max-width: 400px; margin: auto; padding: 30px; background: white; border-radius: 8px;
+                      box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 40px; }
+    label, input { display: block; width: 100%; margin-bottom: 15px; }
+    input { padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    button { background-color: #228B22; color: white; padding: 10px 20px; border: none; border-radius: 6px;
+             cursor: pointer; }
+    button:hover { background-color: #196619; }
+  </style>
 </head>
 <body>
   <header>
@@ -13,33 +23,21 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="cart.html">Cart</a>
-      <a href="login.html">Login</a>
+      <a href="checkout.html">Checkout</a>
     </nav>
   </header>
-
-  <main style="padding: 40px; max-width: 400px; margin: auto;">
-    <h2>Login</h2>
-    <form onsubmit="handleLogin(event)">
-      <label for="username">Username</label><br />
-      <input type="text" id="username" required style="width: 100%; padding: 10px; margin-bottom: 10px;"/><br />
-
-      <label for="password">Password</label><br />
-      <input type="password" id="password" required style="width: 100%; padding: 10px; margin-bottom: 20px;"/><br />
-
-      <button type="submit">Login</button>
+  <div class="form-container">
+    <h2>Login or Sign Up</h2>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required />
+      <button type="submit">Login / Sign Up</button>
     </form>
-  </main>
-
+  </div>
   <footer>
-    <p>&copy; 2025 LEARN WISE Sri Lanka</p>
+    <p>Contact us: <strong>+94 76 123 4567</strong> | <strong>support@learnwise.lk</strong></p>
   </footer>
-
-  <script>
-    function handleLogin(event) {
-      event.preventDefault();
-      alert("Login feature coming soon. You will be redirected.");
-      window.location.href = "index.html";
-    }
-  </script>
 </body>
 </html>
