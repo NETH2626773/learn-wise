@@ -1,43 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login - LEARN WISE</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; background-color: #f5fff5; color: #003300; margin: 0; }
-    header, footer { background-color: #228B22; color: white; text-align: center; padding: 20px; }
-    nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
-    .form-container { max-width: 400px; margin: auto; padding: 30px; background: white; border-radius: 8px;
-                      box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 40px; }
-    label, input { display: block; width: 100%; margin-bottom: 15px; }
-    input { padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
-    button { background-color: #228B22; color: white; padding: 10px 20px; border: none; border-radius: 6px;
-             cursor: pointer; }
-    button:hover { background-color: #196619; }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f5fff5; margin: 0; }
+    header, footer {
+      background-color: #228B22; color: white; text-align: center; padding: 20px;
+    }
+    main { max-width: 400px; margin: 40px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+    input[type="text"], input[type="password"], input[type="email"] {
+      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 6px;
+    }
+    button {
+      background-color: #228B22; color: white; padding: 10px 20px;
+      border: none; border-radius: 6px; cursor: pointer;
+    }
+    a { color: #228B22; }
   </style>
 </head>
 <body>
   <header>
     <h1>LEARN WISE</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="cart.html">Cart</a>
-      <a href="checkout.html">Checkout</a>
-    </nav>
   </header>
-  <div class="form-container">
-    <h2>Login or Sign Up</h2>
+
+  <main>
+    <h2>Login</h2>
     <form>
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" required />
-      <label for="password">Password</label>
-      <input type="password" id="password" placeholder="Enter your password" required />
-      <button type="submit">Login / Sign Up</button>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
     </form>
-  </div>
+    <p>Don't have an account? <a href="#">Sign up here</a></p>
+  </main>
+
   <footer>
-    <p>Contact us: <strong>+94 76 123 4567</strong> | <strong>support@learnwise.lk</strong></p>
+    <p>&copy; 2025 LEARN WISE - Islandwide Delivery</p>
   </footer>
 </body>
 </html>

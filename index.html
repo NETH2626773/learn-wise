@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,16 +35,6 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       margin-bottom: 30px;
     }
-    .deal-banner {
-      background-color: #eaffea;
-      border: 2px dashed #228B22;
-      padding: 20px;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.2em;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
     .categories {
       display: flex;
       gap: 20px;
@@ -64,6 +55,27 @@
     .category:hover {
       background-color: #e0ffe0;
     }
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+    .availability {
+      font-size: 0.9em;
+      color: green;
+    }
+    .unavailable {
+      color: red;
+    }
+    .note {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #eaffea;
+      border-left: 4px solid #228B22;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
@@ -79,12 +91,8 @@
 
   <main>
     <div class="hero">
-      <h2>Welcome to LEARN WISE</h2>
-      <p>Your trusted bookstore for past papers and more – Local and Edexcel curriculum support, islandwide delivery and FREE teacher video guidance!</p>
-    </div>
-
-    <div class="deal-banner">
-      🎉 Great Deals Today! Use Promo Code <strong>WISE10</strong> for 10% OFF! 🎉
+      <h2>Great Deals Today!</h2>
+      <p>Islandwide delivery for past paper books with free teacher video support upon purchase. Elegant. Reliable. Local + Edexcel Curriculum.</p>
     </div>
 
     <section class="categories">
@@ -98,11 +106,28 @@
       </div>
       <div class="category">Edexcel Curriculum</div>
     </section>
+
+    <section class="products">
+      <div class="product">
+        <h3>Sample Book Title</h3>
+        <p>Price: Rs. 1200</p>
+        <p class="availability">Available</p>
+      </div>
+      <div class="product">
+        <h3>Another Book</h3>
+        <p>Price: Rs. 1450</p>
+        <p class="availability unavailable">Out of Stock</p>
+      </div>
+    </section>
+
+    <div class="note">
+      <strong>Note:</strong> To access video support for purchased books, please <a href="login.html" style="color: #228B22; font-weight: bold;">create an account</a> and log in.
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 LEARN WISE Sri Lanka - Islandwide Delivery Available</p>
-    <p>Hotline: +94 76 123 4567 | Email: support@learnwise.lk</p>
+    <p>Contact us: <strong>+94 76 123 4567</strong> | <strong>support@learnwise.lk</strong></p>
   </footer>
 </body>
 </html>
